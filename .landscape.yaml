@@ -1,0 +1,6 @@
+doc-warning: true
+test-warning: true
+max-line-length: 79
+uses:
+    - pytest
+autodetect: true
