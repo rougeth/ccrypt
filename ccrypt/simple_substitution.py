@@ -1,10 +1,10 @@
 
-class SimpleSubstitution:
+class SimpleSubstitution(object):
 
     def __init__(self, alphabet, key):
         self.alphabet = alphabet
         if key > len(alphabet):
-            self.key = key % len(alpha)
+            self.key = key % len(alphabet)
         else:
             self.key = key
 
