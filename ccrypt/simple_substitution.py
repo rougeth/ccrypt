@@ -2,7 +2,7 @@
 class SimpleSubstitution(object):
 
     def __init__(self, alphabet, key):
-        self.alphabet = alphabet
+        self.alphabet = alphabet.lower()
         if key > len(alphabet):
             self.key = key % len(alphabet)
         else:
