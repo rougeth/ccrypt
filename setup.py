@@ -31,8 +31,6 @@ setup(
     url='https://github.com/rougeth/ccrypt',
     license='',
     platforms='any',
-    packages=find_packages(),
-    include_package_data=True,
     tests_require=['pytest'],
     cmdclass = {'test': PyTest},
 )
