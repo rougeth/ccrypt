@@ -1,25 +1,28 @@
 import pytest
 
-from ccrypt import caesar
+from ccrypt.caesar import Caesar
 
 
-def test_shift_a_d():
-    assert caesar.shift('a') == 'd'
+c = Caesar()
 
-def test_shift_b_e():
-    assert caesar.shift('b') == 'e'
 
-def test_shift_x__():
-    assert caesar.shift('x') == ' '
+def test_encrypt_shift_a_d():
+    assert c.encrypt_shift('a') == 'd'
 
-def test_shift_y_a():
-    assert caesar.shift('x') == ' '
+def test_encrypt_shift_b_e():
+    assert c.encrypt_shift('b') == 'e'
+
+def test_encrypt_shift_x__():
+    assert c.encrypt_shift('x') == ' '
+
+def test_encrypt_shift_y_a():
+    assert c.encrypt_shift('x') == ' '
 
 def test_caesar_ma_pd():
-    assert caesar.caesar('ma') == 'pd'
+    assert c.encrypt('ma') == 'pd'
 
 def test_caesar_pe_sh():
-    assert caesar.caesar('pe') == 'sh'
+    assert c.encrypt('pe') == 'sh'
 
 def test_freak_message():
-    assert caesar.caesar('dojo iesb') == 'grmrclhve'
+    assert c.encrypt('dojo iesb') == 'grmrclhve'
