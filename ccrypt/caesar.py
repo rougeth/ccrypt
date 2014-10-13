@@ -1,5 +1,5 @@
 from ccrypt.simple_substitution import SimpleSubstitution
-from ccrypt.utils import k27 as alphabet
+from ccrypt.utils import k26 as alphabet
 
 
 class Caesar(SimpleSubstitution):
