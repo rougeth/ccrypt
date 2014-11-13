@@ -24,3 +24,8 @@ class SimpleSubstitution(object):
             cryptogram = cryptogram + self.encrypt_shift(char)
         return cryptogram
 
+    def decrypt(self, message):
+        cryptogram = ''
+        for char in message.lower():
+            cryptogram = cryptogram + self.decrypt_shift(char)
+        return cryptogram

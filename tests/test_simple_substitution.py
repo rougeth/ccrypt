@@ -29,5 +29,10 @@ def test_decrypt_shift():
 
 def test_encrypt_message():
     s = SimpleSubstitution(**params)
-    cryptogram = s.encrypt('Hello World')
+    cryptogram = s.encrypt('hello world')
     assert cryptogram == 'khoorczruog'
+
+def test_decrypt_message():
+    s = SimpleSubstitution(**params)
+    cryptogram = s.decrypt('khoorczruog')
+    assert cryptogram == 'hello world'
