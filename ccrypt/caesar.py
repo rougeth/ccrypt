@@ -5,4 +5,4 @@ from ccrypt.utils import k26 as alphabet
 class Caesar(SimpleSubstitution):
 
     def __init__(self):
-        super().__init__(alphabet, 3)
+        super(Caesar, self).__init__(alphabet, 3)
