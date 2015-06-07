@@ -20,7 +20,8 @@ class RailFence(object):
 
 
     def decrypt(self, cryptogram):
-        matrix = [[' ' for col in range(len(cryptogram))] for i in range(self.rails)]
+        matrix = [[' ' for col in range(len(cryptogram))]
+                  for i in range(self.rails)]
         read = 0
 
         for rail in range(self.rails):
