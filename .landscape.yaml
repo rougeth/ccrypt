@@ -1,6 +1,4 @@
-doc-warning: true
-test-warning: true
-max-line-length: 79
-uses:
-    - pytest
-autodetect: true
+doc-warning: yes
+test-warning: yes
+pep8:
+    full: yes
