@@ -1,4 +1,4 @@
-doc-warning: yes
-test-warning: yes
+doc-warnings: yes
+test-warnings: yes
 pep8:
     full: yes

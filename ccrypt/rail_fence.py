@@ -1,6 +1,8 @@
 from itertools import cycle
 
+
 class RailFence(object):
+
 
     def __init__(self, alphabet, rails):
         self.alphabet = alphabet.lower()
@@ -17,7 +19,6 @@ class RailFence(object):
             return rail * 2
         else:
             return (self.rails - rail - 1) * 2
-
 
     def decrypt(self, cryptogram):
         matrix = [[' ' for col in range(len(cryptogram))]
@@ -66,7 +67,4 @@ class RailFence(object):
             cryptogram += line
 
         return cryptogram
-
-
-
 
